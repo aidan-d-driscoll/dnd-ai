@@ -1,0 +1,383 @@
+{
+    "Common Deck, Treasure Locations": {
+        "1 of Swords": {
+            "Name": "Avenger",
+            "Reading": "The treasure lies in a dragon's house, in hands once clean and now corrupted.",
+            "Meaning": "The treasure is in the possession of Vladimir Horngaard in Argynvostholt."
+        },
+        "2 of Swords": {
+            "Name": "Paladin",
+            "Reading": "I see a sleeping prince, a servant of light and the brother of darkness. The treasure lies with him.",
+            "Meaning": "The treasure lies in Sergei's tomb."
+        },
+        "3 of Swords": {
+            "Name": "Soldier",
+            "Reading": "Go to the mountains. Climb the white tower guarded by golden knights.",
+            "Meaning": "The treasure lies on the rooftop of the Tsolenka Pass guard tower."
+        },
+        "4 of Swords": {
+            "Name": "Mercenary",
+            "Reading": "The thing you seek lies with the dead, under mountains of gold coins.",
+            "Meaning": "The treasure lies in a crypt in Castle Ravenloft."
+        },
+        "5 of Swords": {
+            "Name": "Myrmidon",
+            "Reading": "Look for a den of wolves in the hills overlooking a mountain lake. The treasure belongs to Mother Night.",
+            "Meaning": "The treasure lies in the shrine of Mother Night in the werewolf den."
+        },
+        "6 of Swords": {
+            "Name": "Berserker",
+            "Reading": "Find the Mad Dog's crypt. The treasure lies within, beneath blackened bones.",
+            "Meaning": "The treasure lies in the crypt of General Kroval \"Mad Dog\" Grislek."
+        },
+        "7 of Swords": {
+            "Name": "Hooded One",
+            "Reading": "I see a faceless god. He awaits you at the end of a long and winding road, deep in the mountains.",
+            "Meaning": "The treasure is inside the head of the giant statue in the Amber Temple."
+        },
+        "8 of Swords": {
+            "Name": "Dictator",
+            "Reading": "I see a throne fit for a king.",
+            "Meaning": "The treasure lies in Castle Ravenloft's audience hall."
+        },
+        "9 of Swords": {
+            "Name": "Torturer",
+            "Reading": "There is a town where all is not well. There you will find a house of corruption, and within, a dark room full of still ghosts.",
+            "Meaning": "The treasure is hidden in the attic of the burgomaster's mansion in Vallaki."
+        },
+        "Master of Swords": {
+            "Name": "Warrior",
+            "Reading": "That which you seek lies in the womb of darkness, the devil's lair: the one place to which he must return.",
+            "Meaning": "The treasure lies in Strahd's tomb."
+        },
+        "1 of Stars": {
+            "Name": "Transmuter",
+            "Reading": "Go to a place of dizzying heights, where the stone itself is alive!",
+            "Meaning": "The treasure lies in Castle Ravenloft's north tower peak."
+        },
+        "2 of Stars": {
+            "Name": "Diviner",
+            "Reading": "Look to the one who sees all. The treasure is hidden in her camp.",
+            "Meaning": "The treasure lies in Madam Eva's encampment. If she is the one performing the card reading, she says, \"I think the treasure is under my very nose!\""
+        },
+        "3 of Stars": {
+            "Name": "Enchanter",
+            "Reading": "I see a kneeling woman—a rose of great beauty plucked too soon. The master of the marsh knows of whom I speak.",
+            "Meaning": "The treasure lies under Marina's monument in Berez. \"The master of the marsh\" refers to Burgomaster Lazlo Ulrich, whose ghost can point characters toward the monument."
+        },
+        "4 of Stars": {
+            "Name": "Abjurer",
+            "Reading": "I see a fallen house guarded by a great stone dragon. Look to the highest peak.",
+            "Meaning": "The treasure lies in the beacon of Argynvostholt. \"Great stone dragon\" refers to the statue in the fallen house."
+        },
+        "5 of Stars": {
+            "Name": "Elementalist",
+            "Reading": "The treasure is hidden in a small castle beneath a mountain, guarded by amber giants.",
+            "Meaning": "The treasure is inside a model of Castle Ravenloft in the Amber Temple."
+        },
+        "6 of Stars": {
+            "Name": "Evoker",
+            "Reading": "Search for the crypt of a wizard ordinaire. His staff is the key.",
+            "Meaning": "The treasure is hidden in the crypt of Gralmore Nimblenobs."
+        },
+        "7 of Stars": {
+            "Name": "Illusionist",
+            "Reading": "A man is not what he seems. He comes here in a carnival wagon. Therein lies what you seek.",
+            "Meaning": "The treasure lies in Rictavio's carnival wagon."
+        },
+        "8 of Stars": {
+            "Name": "Necromancer",
+            "Reading": "A woman hangs above a roaring fire. Find her, and you will find the treasure.",
+            "Meaning": "The treasure lies in Castle Ravenloft's study."
+        },
+        "9 of Stars": {
+            "Name": "Conjurer",
+            "Reading": "I see a dead village, drowned by a river, ruled by one who has brought great evil into the world.",
+            "Meaning": "The treasure is in Baba Lysaga's hut."
+        },
+        "Master of Stars": {
+            "Name": "Wizard",
+            "Reading": "Look for a wizard's tower on a lake. Let the wizard's name and servant guide you to that which you seek.",
+            "Meaning": "The treasure lies on the top floor of Van Richten's Tower."
+        },
+        "1 of Coins": {
+            "Name": "Swashbuckler",
+            "Reading": "I see the skeleton of a deadly warrior, lying on a bed of stone flanked by gargoyles.",
+            "Meaning": "The treasure lies in the crypt of Endorovich."
+        },
+        "2 of Coins": {
+            "Name": "Philanthropist",
+            "Reading": "Look to a place where sickness and madness are bred. Where children once cried, the treasure lies still.",
+            "Meaning": "The treasure is in the nursery of the Abbey of Saint Markovia."
+        },
+        "3 of Coins": {
+            "Name": "Trader",
+            "Reading": "Look to the Wizard of Wines! In wood and sand the treasure hides.",
+            "Meaning": "The treasure lies in the glassblowing workshop in the Wizard of Wines winery."
+        },
+        "4 of Coins": {
+            "Name": "Merchant",
+            "Reading": "Seek a cask that once contained the finest wine, of which not a drop remains.",
+            "Meaning": "The treasure lies in Castle Ravenloft's wine cellar."
+        },
+        "5 of Coins": {
+            "Name": "Guild Member",
+            "Reading": "I see a dark room full of bottles. It is the tomb of a guild member.",
+            "Meaning": "The treasure lies in the crypt of Artank Swilovich."
+        },
+        "6 of Coins": {
+            "Name": "Beggar",
+            "Reading": "A wounded elf has what you seek. He will part with the treasure to see his dark dreams fulfilled.",
+            "Meaning": "The treasure is hidden in Kasimir's hovel."
+        },
+        "7 of Coins": {
+            "Name": "Thief",
+            "Reading": "What you seek lies at the crossroads of life and death, among the buried dead.",
+            "Meaning": "The treasure is buried in the graveyard at the River Ivlis crossroads."
+        },
+        "8 of Coins": {
+            "Name": "Tax Collector",
+            "Reading": "The Vistani have what you seek. A missing child holds the key to the treasure's release.",
+            "Meaning": "The treasure is hidden in the Vistani treasure wagon. \"A missing child\" refers to Arabelle."
+        },
+        "9 of Coins": {
+            "Name": "Miser",
+            "Reading": "Look for a fortress inside a fortress, in a place hidden behind fire.",
+            "Meaning": "The treasure lies in Castle Ravenloft's treasury."
+        },
+        "Master of Coins": {
+            "Name": "Rogue",
+            "Reading": "I see a nest of ravens. There you will find the prize.",
+            "Meaning": "The treasure is hidden in the attic of the Blue Water Inn."
+        },
+        "1 of Glyphs": {
+            "Name": "Monk",
+            "Reading": "The treasure you seek is hidden behind the sun, in the house of a saint.",
+            "Meaning": "The treasure lies in the main hall of the Abbey of Saint Markovia."
+        },
+        "2 of Glyphs": {
+            "Name": "Missionary",
+            "Reading": "I see a garden dusted with snow, watched over by a scarecrow with a sackcloth grin. Look not to the garden but to the guardian.",
+            "Meaning": "The treasure is hidden inside one of the scarecrows in the garden of the Abbey of Saint Markovia."
+        },
+        "3 of Glyphs": {
+            "Name": "Healer",
+            "Reading": "Look to the west. Find a pool blessed by the light of the white sun.",
+            "Meaning": "The treasure lies beneath the gazebo in the Shrine of the White Sun."
+        },
+        "4 of Glyphs": {
+            "Name": "Shepherd",
+            "Reading": "Find the mother she who gave birth to evil.",
+            "Meaning": "The treasure lies in the tomb of King Barov and Queen Ravenovia."
+        },
+        "5 of Glyphs": {
+            "Name": "Druid",
+            "Reading": "An evil tree grows atop a hill of graves where the ancient dead sleep. The ravens can help you find it. Look for the treasure there.",
+            "Meaning": "The treasure lies at the base of the Gulthias Tree. Any wereraven encountered in the wilderness can lead the characters to the location."
+        },
+        "6 of Glyphs": {
+            "Name": "Anarchist",
+            "Reading": "I see walls of bones, a chandelier of bones, and a table of bones—all that remains of enemies long forgotten.",
+            "Meaning": "The treasure lies in Castle Ravenloft's Hall of Bones."
+        },
+        "7 of Glyphs": {
+            "Name": "Charlatan",
+            "Reading": "I see a lonely mill on a precipice. The treasure lies within.",
+            "Meaning": "The treasure lies in the attic of Old Bonegrinder."
+        },
+        "8 of Glyphs": {
+            "Name": "Bishop",
+            "Reading": "What you seek lies in a pile of treasure, beyond a set of amber doors.",
+            "Meaning": "The treasure lies in the sealed treasury of the Amber Temple."
+        },
+        "9 of Glyphs": {
+            "Name": "Traitor",
+            "Reading": "Look for a wealthy woman. A staunch ally of the devil, she keeps the treasure under lock and key, with the bones of an ancient enemy.",
+            "Meaning": "The treasure is hidden in the master bedroom of Wachterhaus."
+        },
+        "Master of Glyphs": {
+            "Name": "Priest",
+            "Reading": "You will find what you seek in the castle, amid the ruins of a place of supplication.",
+            "Meaning": "The treasure lies in Castle Ravenloft's chapel."
+        }
+    },
+    "High Deck, Strahd's Enemy": {
+        "Joker 1": {
+            "Name": "Artifact",
+            "Reading": "Look for an entertaining man with a monkey. This man is more than he seems.",
+            "Meaning": "This card refers to Rictavio, who can be found at the Blue Water Inn in Vallaki. Normally reluctant to accompany the characters, Rictavio changes his tune if the characters tell him about the card reading. He sheds his disguise and introduces himself as Dr. Rudolph van Richten."
+        },
+        "Jack of Coins": {
+            "Name": "Beast",
+            "Reading": "A werewolf holds a secret hatred for your enemy. Use her hatred to your advantage.",
+            "Meaning": "This card refers to the werewolf Zuleika Toranescu. She will accompany the characters if they promise to avenge her mate, Emil, by killing the leader of her pack, Kiril Stoyanovich."
+        },
+        "King of Coins (A)": {
+            "Name": "Broken One",
+            "Reading": "Your greatest ally will be a wizard. His mind is broken, but his spells are strong.",
+            "Meaning": "This card refers to the Mad Mage of Mount Baratok."
+        },
+        "King of Coins (B)": {
+            "Name": "Broken One",
+            "Reading": "I see a man of faith whose sanity hangs by a thread. He has lost someone close to him.",
+            "Meaning": "This card refers to Donavich, the priest in the village of Barovia. He will not accompany the characters until his son, Doru, is dead and buried."
+        },
+        "King of Swords": {
+            "Name": "Darklord",
+            "Reading": "Ah, the worst of all truths: You must face the evil of this land alone!",
+            "Meaning": "There is no NPC who can inspire the characters."
+        },
+        "King of Stars (A)": {
+            "Name": "Donjon",
+            "Reading": "Search for a troubled young man surrounded by wealth and madness. His home is his prison.",
+            "Meaning": "This card refers to Victor Vallakovich. Realizing that the characters are the key to his salvation, he enthusiastically leaves home and accompanies them to Castle Ravenloft."
+        },
+        "King of Stars (B)": {
+            "Name": "Donjon",
+            "Reading": "Find a girl driven to insanity, locked in the heart of her dead father's house. Curing her madness is key to your success.",
+            "Meaning": "This card refers to Stella Wachter. She grants the party no benefit unless her madness is cured. With her wits restored, Stella is happy to join the party and leave her rotten family behind."
+        },
+        "Jack of Stars": {
+            "Name": "Seer",
+            "Reading": "Look for a dusk elf living among the Vistani. He has suffered a great loss and is haunted by dark dreams. Help him, and he will help you in return.",
+            "Meaning": "This card refers to Kasimir Velikov. The dusk elf accompanies the characters to Castle Ravenloft only after they lead him to the Amber Temple and help him find the means to resurrect his dead sister, Patrina Velikovna."
+        },
+        "King of Glyphs (A)": {
+            "Name": "Ghost",
+            "Reading": "I see a fallen paladin of a fallen order of knights. He lingers like a ghost in a dead dragon's lair.",
+            "Meaning": "This card refers to the revenant Sir Godfrey Gwilym. Although initially unwilling to accompany the characters, he will do so if the characters convince him that the honor of the Order of the Silver Dragon can be restored with his help. Doing this requires a successful DC 15 Charisma (Persuasion) check."
+        },
+        "King of Glyphs (B)": {
+            "Name": "Ghost",
+            "Reading": "Stir the spirit of the clumsy knight whose crypt lies deep within the castle.",
+            "Meaning": "This card refers to Sir Klutz the phantom warrior. If Sir Klutz is Strahd's enemy, then the phantom warrior disappears not after seven days, but only after he or Strahd is reduced to 0 hit points."
+        },
+        "Jack of Swords": {
+            "Name": "Executioner",
+            "Reading": "Seek out the brother of the devil's bride. They call him \"the lesser,\" but he has a powerful soul.",
+            "Meaning": "This card refers to Ismark Kolyanovich. Ismark won't accompany the characters to Castle Ravenloft until he knows that his sister, Ireena Kolyana, is safe."
+        },
+        "Joker 2 (A)": {
+            "Name": "Horseman",
+            "Reading": "I see a dead man of noble birth, guarded by his widow. Return life to the dead man's corpse, and he will be your staunch ally.",
+            "Meaning": "This card refers to Nikolai Wachter the elder, who is dead. If the characters cast a raise dead spell or a resurrection spell on his preserved corpse, Nikolai agrees to help the characters once he feels well enough, despite his wife's protests. Although his family has long supported Strahd, Nikolai came to realize toward the end of his life that Strahd must be destroyed to save Barovia. If the characters don't have the means to raise Nikolai from the dead, Rictavio gives them a spell scroll of raise dead if he learns of their need."
+        },
+        "Joker 2 (B)": {
+            "Name": "Horseman",
+            "Reading": "A man of death named Arrigal will forsake his dark lord to serve your cause. Beware! He has a rotten soul.",
+            "Meaning": "This card refers to the Vistani assassin Arrigal. If the characters mention this card reading to him, he accepts his fate and accompanies them. If the characters succeed in defeating Strahd, Arrigal betrays and attacks them, believing that he is destined to become Barovia's new lord."
+        },
+        "Queen of Glyphs (A)": {
+            "Name": "Innocent",
+            "Reading": "I see a young man with a kind heart. A mother's boy! He is strong in body but weak of mind. Seek him out in the village of Barovia.",
+            "Meaning": "This card refers to Parriwimple. Although he's a simpleton, he won't travel to Castle Ravenloft without good cause. Characters can manipulate him into going by preying on his good heart. For instance, he might go there to help rescue missing Barovians, or to save the life of Ireena Kolyana, who is very beautiful. The characters must somehow deal with Bildrath, Parriwimple's employer, who won't let the foolish boy go to the castle for any reason."
+        },
+        "Queen of Glyphs (B)": {
+            "Name": "Innocent",
+            "Reading": "Evil's bride is the one you seek!",
+            "Meaning": "This card refers to Ireena Kolyana. Her brother, Ismark, opposes the idea of Ireena being taken to Castle Ravenloft, but she insists on going there once the characters tell her about the card reading. Ireena won't accompany the characters, however, until Kolyan Indirovich's body is laid to rest in the cemetery."
+        },
+        "Jack of Glyphs (A)": {
+            "Name": "Marionette",
+            "Reading": "What horror is this? I see a man made by a man. Ageless and alone, it haunts the towers of the castle.",
+            "Meaning": "This card refers to Pidlwick II."
+        },
+        "Jack of Glyphs (B)": {
+            "Name": "Marionette",
+            "Reading": "Look for a man of music, a man with two heads. He lives in a place of great hunger and sorrow.",
+            "Meaning": "This card refers to Clavin Belview, the two-headed mongrelfolk. Clavin serves the Abbot out of fear and a perverse sense of loyalty. His job is to deliver food to the other mongrelfolk, whom he abhors. If the Abbot still lives, Clavin doesn't want to earn his master's ire by attempting to leave, and he refuses to accompany the characters. But if the Abbot dies, Clavin doesn't have any reason to remain in the abbey, so he's willing to come along if he is bribed with wine. Clavin provides no benefit to the party without his viol."
+        },
+        "Queen of Swords": {
+            "Name": "Mists",
+            "Reading": "A Vistana wanders this land alone, searching for her mentor. She does not stay in one place for long. Seek her out at Saint Markovia's abbey, near the mists.",
+            "Meaning": "This card refers to Ezmerelda d'Avenir. She can be found in the Abbey of Saint Markovia, as well as several other locations throughout Barovia."
+        },
+        "Queen of Stars": {
+            "Name": "Raven",
+            "Reading": "Find the leader of the feathered ones who live among the vines. Though old, he has one more fight left in him.",
+            "Meaning": "This card refers to Davian Martikov. The old wereraven, realizing that he has a chance to end Strahd's tyranny, leaves his vineyard and winery in the capable hands of his sons, Adrian and Elvir. But before he travels to Castle Ravenloft to face Strahd, Davian insists on reconciling with his third son, Urwin Martikov."
+        },
+        "Queen of Coins (A)": {
+            "Name": "Tempter",
+            "Reading": "I see a child—a Vistana. You must hurry, for her fate hangs in the balance. Find her at the lake!",
+            "Meaning": "This card refers to Arabelle. She gladly joins the party. But if she returns to her camp, her father, Luvash, refuses to let her go."
+        },
+        "Queen of Coins (B)": {
+            "Name": "Tempter",
+            "Reading": "I hear a wedding bell, or perhaps a death knell. It calls thee to a mountainside abbey, wherein you will find a woman who is more than the sum of her parts.",
+            "Meaning": "This card refers to Vasilka the flesh golem."
+        }
+    },
+    "High Deck, Strahd's Location in the Castle": {
+        "Joker 1": {
+            "Name": "Artifact",
+            "Reading": "He lurks in the darkness where the morning light once shone—a sacred place.",
+            "Meaning": "Strahd faces the characters in the chapel."
+        },
+        "Jack of Coins": {
+            "Name": "Beast",
+            "Reading": "The beast sits on his dark throne.",
+            "Meaning": "Strahd faces the characters in the audience hall."
+        },
+        "King of Coins": {
+            "Name": "Broken One",
+            "Reading": "He haunts the tomb of the man he envied above all.",
+            "Meaning": "Strahd faces the characters in Sergei's tomb."
+        },
+        "King of Swords": {
+            "Name": "Darklord",
+            "Reading": "He lurks in the depths of darkness, in the one place to which he must return.",
+            "Meaning": "Strahd faces the characters in his tomb."
+        },
+        "King of Stars": {
+            "Name": "Donjon",
+            "Reading": "He lurks in a hall of bones, in the dark pits of his castle.",
+            "Meaning": "Strahd faces the characters in the Hall of Bones."
+        },
+        "Jack of Stars": {
+            "Name": "Seer",
+            "Reading": "He waits for you in a place of wisdom, warmth, and despair. Great secrets are there.",
+            "Meaning": "Strahd faces the characters in the study."
+        },
+        "King of Glyphs": {
+            "Name": "Ghost",
+            "Reading": "Look to the father's tomb.",
+            "Meaning": "Strahd faces the characters in the tomb of King Barov and Queen Ravenovia."
+        },
+        "Jack of Swords": {
+            "Name": "Executioner",
+            "Reading": "I see a dark figure on a balcony, looking down upon this tortured land with a twisted smile.",
+            "Meaning": "Strahd faces the characters at the overlook."
+        },
+        "Joker 2": {
+            "Name": "Horseman",
+            "Reading": "He lurks in the one place to which he must return—a place of death.",
+            "Meaning": "Strahd faces the characters in his tomb."
+        },
+        "Queen of Glyphs": {
+            "Name": "Innocent",
+            "Reading": "He dwells with the one whose blood sealed his doom, a brother of light snuffed out too soon.",
+            "Meaning": "Strahd faces the characters in Sergei's tomb."
+        },
+        "Jack of Glyphs": {
+            "Name": "Marionette",
+            "Reading": "Look to great heights. Find the beating heart of the castle. He waits nearby.",
+            "Meaning": "Strahd faces the characters in the north tower peak."
+        },
+        "Queen of Swords": {
+            "Name": "Mists",
+            "Reading": "The cards can't see where the evil lurks. The mists obscure all!",
+            "Meaning": "The card offers no clue about where the final showdown with Strahd will occur. It can happen anywhere you like in Castle Ravenloft. Alternatively, Madam Eva tells the characters to return to her after at least three days, and she will consult the cards again, but only to discern the location of their enemy."
+        },
+        "Queen of Stars": {
+            "Name": "Raven",
+            "Reading": "Look to the mother's tomb.",
+            "Meaning": "Strahd faces the characters in the tomb of King Barov and Queen Ravenovia."
+        },
+        "Queen of Coins": {
+            "Name": "Tempter",
+            "Reading": "I see a secret place—a vault of temptation hidden behind a woman of great beauty. The evil waits atop his tower of treasure.",
+            "Meaning": "Strahd confronts the characters in the treasury. \"A woman of great beauty\" refers to the portrait of Tatyana hanging in the castle's study, which contains a secret door that leads to the treasury."
+        }
+    }
+}
