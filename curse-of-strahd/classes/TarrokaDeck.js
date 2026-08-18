@@ -1,51 +1,95 @@
-// Strahd's Enemy. Drawn from the high deck, the fourth card in the card reading determines the location of an NPC who can improve the characters' chances of defeating Strahd. (Some cards offer two possible results, A and B; in such a case, you can pick the one you prefer or that better suits the circumstances of the adventure.) Strahd senses that this NPC is a danger to him and tries to eliminate the threat as quickly as possible. This NPC, whoever it ends up being, gains the following additional action: Insipre. While within sight of Strahd, this character grants inspiration to one player character he or she can see. Each of the NPCs described in this section has a role to play in the adventure, even if that individual isn't indicated in the card reading. For the one so designated, however, the information in this section regarding the NPC's behavior takes precedence over whatever is said elsewhere in these pages; that NPC is extraordinary.
-// Strahd's Location in the Castle. Drawn from the hig deck, the fifth card in the chard reading determines the location of the final showdownw ith Strahd-the place in Castle Ravenloft where characters are sure to find im. The first time the characters arrive at the foretold location, Strahd is there, provided he hasn't been forced back into his coffin.
+import fs from "fs";
 
-const fs = require("fs");
+const INVALID_DECK_NAME_ERROR = "Invalid Deck Name";
+const NO_CARDS_ERROR = "No Cards Remaining in Deck";
+const INVALID_DIVINATION_EVENT_ERROR = "Invalid Divination Event Selected"
 
-export default class TarrokaDeck {
+/* ********************************************************** *\
+    Card Divination Events:
+    - (1, 2, 3) Common Deck, Treasure Locations
+        o 1: The Tome of Strahd
+        o 2: The Holy Symbol of Ravenkind
+        o 3: The Sunsword
+    - (4) High Deck, Strahd's Enemy
+    - (5) High Deck, Strahd's Location in the Castle
+\* ********************************************************** */
+
+export class TarrokaDeck {
     constructor() {
-        const fortunes = fs.readFileSync("assets/fortunes.json", "utf8");
-        const tarrokaDeckInformation = JSON.parse(fortunes);
+        this.tarrokaFortunes = JSON.parse(fs.readFileSync("../assets/fortunes.json", "utf8"));
+        this.divinationEvents = ["Common Deck, Treasure Locations", "High Deck, Strahd's Enemy", "High Deck, Strahd's Location in the Castle"];
         
-        const deck = fs.readFileSync("assets/deck.json", "utf8");
-        const deckData = JSON.parse(deck);
-
-        const unshuffledDeck = []
-        for (let i = 0; i < deckData.suites.length; i++) {
-            for (let j = 0; j < deckData.cards.length; j++) {
-                unshuffledDeck.push(`${deckData.cards[j]} of ${deckData.suites[i]}`);
+        const deckData = JSON.parse(fs.readFileSync("../assets/deck.json", "utf8"));
+        this.unshuffledFullDeck = []
+        for (let i = 0; i < deckData.cards.length; i++) {
+            for (let j = 0; j < deckData.suits.length; j++) {
+                this.unshuffledFullDeck.push(`${deckData.cards[i]} of ${deckData.suits[j]}`);
             }
         }
         for (let i = 0; i < deckData.jokers.length; i++) {
-            unshuffledDeck.push(deckData.jokers[i])
+            this.unshuffledFullDeck.push(deckData.jokers[i])
         }
+        this.unshuffledCommonDeck = this.unshuffledFullDeck.slice(0, 40)
+        this.unshuffledHighDeck = this.unshuffledFullDeck.slice(40)
 
-        this.shuffledDeck = shuffleDeck(unshuffledDeck);
+        this.currentDeck = [...this.unshuffledFullDeck];
     }
 
-    createCommonDeck() {
-    }
-
-    createHighDeck() {
-    }
-
-    createDeck() {
+    shuffle(deckName) {
+        if (deckName === "Full Deck") {
+            this.currentDeck = [...this.unshuffledFullDeck];
+        } else if (deckName === "Common Deck") {
+            this.currentDeck = [...this.unshuffledCommonDeck];
+        } else if (deckName === "High Deck") {
+            this.currentDeck = [...this.unshuffledHighDeck];
+        } else {
+            return INVALID_DECK_NAME_ERROR;
+        }
+        for (let i = this.currentDeck.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [this.currentDeck[i], this.currentDeck[j]] = [this.currentDeck[j], this.currentDeck[i]];
+        }
+        return 1;
     }
 
     pullCard() {
-
-    }
-    
-    shuffleDeck() {
-
-    }
-
-    divineReading(card) {
-
+        if (this.currentDeck.length > 0) {
+            return this.currentDeck.shift();
+        } else {
+            return NO_CARDS_ERROR;
+        }
     }
 
-    pullMeaning(card) {
+    getCardName(card) {
+        return this.tarrokaFortunes[card]["Name"];
+    }
 
+    divineReading(card, event) {
+        if (this.divinationEvents.includes(event)) {
+
+            // Handle duplicate meaning cases, (A) or (B)
+            if (`${card} (A)` in this.tarrokaFortunes[event]) {
+                card = Math.random() < 0.5 ? `${card} (A)` : `${card} (B)`;
+            }
+
+            return this.tarrokaFortunes[event][card]["Reading"];
+        }
+
+        return INVALID_DIVINATION_EVENT_ERROR;
+    }
+
+    discernMeaning(card, event) {
+        if (this.divinationEvents.includes(event)) {
+
+            // Handle duplicate meaning cases, (A) or (B)
+            if (`${card} (A)` in this.tarrokaFortunes[event]) {
+                card = Math.random() < 0.5 ? `${card} (A)` : `${card} (B)`;
+                console.log(card);
+            }
+
+            return this.tarrokaFortunes[event][card]["Meaning"];
+        }
+        
+        return INVALID_DIVINATION_EVENT_ERROR;
     }
 }
