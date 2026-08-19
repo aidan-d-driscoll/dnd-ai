@@ -1,7 +1,6 @@
-const readline = require("readline")
-
-const { askOllama } = require("../../ollama");
-const { TarrokaDeck } = require("../classes/TarrokaDeck.js");
+import readline from 'readline';
+import initializeGame from "./init.js";
+import askOllama from "../../ollama.js";
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -15,22 +14,18 @@ function ask(question) {
 }
 
 async function main() {
-    // const response = await askOllama(input);
-    const deck = new TarrokaDeck();
-    deck.shuffle("High Deck");
+    
+    const saveName = "Testing";
+    await initializeGame(saveName);
 
+    // Main Game Loop   
     while (true) {
-        const input = await ask("Draw Card, or Quit? > ");
-        if (input == "Quit") {
-            break;
-        } else {
-            const card = deck.pullCard();
-            console.log(card);
-            console.log(deck.divineReading(card, "High Deck, Strahd's Enemy"));
-            console.log(deck.discernMeaning(card, "High Deck, Strahd's Enemy"));
-        }
+        
+        const input = await ask("> ");
+        const response = await askOllama(input, "Roleplay", "Count Strahd von Zarovich");
+        console.log(response);
+
     }
-    console.log(deck.pullCard());
 
     rl.close()
 }

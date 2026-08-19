@@ -1,4 +1,6 @@
 import fs from "fs";
+import path from 'path';
+import { config } from "../src/config.js"
 
 const INVALID_DECK_NAME_ERROR = "Invalid Deck Name";
 const NO_CARDS_ERROR = "No Cards Remaining in Deck";
@@ -14,12 +16,12 @@ const INVALID_DIVINATION_EVENT_ERROR = "Invalid Divination Event Selected"
     - (5) High Deck, Strahd's Location in the Castle
 \* ********************************************************** */
 
-export class TarrokaDeck {
+export default class TarrokaDeck {
     constructor() {
-        this.tarrokaFortunes = JSON.parse(fs.readFileSync("../assets/fortunes.json", "utf8"));
+        this.tarrokaFortunes = JSON.parse(fs.readFileSync(path.join(config.assetsDir, "fortunes.json"), "utf8"));
         this.divinationEvents = ["Common Deck, Treasure Locations", "High Deck, Strahd's Enemy", "High Deck, Strahd's Location in the Castle"];
         
-        const deckData = JSON.parse(fs.readFileSync("../assets/deck.json", "utf8"));
+        const deckData = JSON.parse(fs.readFileSync(path.join(config.assetsDir, "deck.json"), "utf8"));
         this.unshuffledFullDeck = []
         for (let i = 0; i < deckData.cards.length; i++) {
             for (let j = 0; j < deckData.suits.length; j++) {
@@ -60,36 +62,13 @@ export class TarrokaDeck {
         }
     }
 
-    getCardName(card) {
-        return this.tarrokaFortunes[card]["Name"];
-    }
-
-    divineReading(card, event) {
-        if (this.divinationEvents.includes(event)) {
-
-            // Handle duplicate meaning cases, (A) or (B)
-            if (`${card} (A)` in this.tarrokaFortunes[event]) {
-                card = Math.random() < 0.5 ? `${card} (A)` : `${card} (B)`;
-            }
-
-            return this.tarrokaFortunes[event][card]["Reading"];
+    getDivination(card, event) {
+        if (!this.divinationEvents.includes(event)) {
+            return INVALID_DIVINATION_EVENT_ERROR;
         }
-
-        return INVALID_DIVINATION_EVENT_ERROR;
-    }
-
-    discernMeaning(card, event) {
-        if (this.divinationEvents.includes(event)) {
-
-            // Handle duplicate meaning cases, (A) or (B)
-            if (`${card} (A)` in this.tarrokaFortunes[event]) {
-                card = Math.random() < 0.5 ? `${card} (A)` : `${card} (B)`;
-                console.log(card);
-            }
-
-            return this.tarrokaFortunes[event][card]["Meaning"];
+        if (`${card} (A)` in this.tarrokaFortunes[event]) {
+            card = Math.random() < 0.5 ? `${card} (A)` : `${card} (B)`;
         }
-        
-        return INVALID_DIVINATION_EVENT_ERROR;
+        return this.tarrokaFortunes[event][card];
     }
 }
