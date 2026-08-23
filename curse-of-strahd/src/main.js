@@ -1,6 +1,6 @@
 import readline from 'readline';
 import initializeGame from "./init.js";
-import askOllama from "../../ollama.js";
+import askOllama from "../../public/ollama.js";
 
 const rl = readline.createInterface({
     input: process.stdin,
