@@ -1,7 +1,27 @@
-import readline from 'readline';
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
+
+import readline from "readline";
 import initializeGame from "./init.js";
 import askOllama from "../../public/ollama.js";
 
+// Pathing
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Set up Server
+const app = express();
+
+app.use(express.json())
+
+app.use(express.static(path.join(__dirname, "../../public")));
+
+app.listen(3000, () => {
+    console.log("Game Server running at http://localhost:3000");
+});
+
+// Initialize I/O Responsibilities
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -13,6 +33,7 @@ function ask(question) {
     });
 }
 
+// Runs game
 async function main() {
     
     const saveName = "Testing";
@@ -22,7 +43,12 @@ async function main() {
     while (true) {
         
         const input = await ask("> ");
-        const response = await askOllama(input, "Roleplay", "Count Strahd von Zarovich");
+        const response = await askOllama(
+            input,
+            "Roleplay",
+            "Count Strahd von Zarovich"
+        );
+
         console.log(response);
 
     }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Character Sheet</title>
+    </head>
+
+    <body>
+        <h1>Character Sheet</h1>
+
+        <label>
+            Character Name:
+            <input type="text" id="characterName"></label>
+        </label>
+
+        <p id="nameError"></p>
+
+        <label>
+            Class:
+            <select id="characterClass">
+                <option value="">Choose a class</option>
+                <option value="articifer">Articifer</option>
+                <option value="barbarian">Barbarian</option>
+                <option value="bard">Bard</option>
+                <option value="cleric">Cleric</option>
+                <option value="druid">Druid</option>
+                <option value="fighter">Fighter</option>
+                <option value="monk">Monk</option>
+                <option value="paladin">Paladin</option>
+                <option value="ranger">Ranger</option>
+                <option value="rogue">Rogue</option>
+                <option value="sorcerer">Sorcerer</option>
+                <option value="warlock">Warlock</option>
+                <option value="wizard">Wizard</option>
+            </select>
+
+        </label>
+
+        <p id="classError"></p>
+
+        <button id="submitCharacter" type="button">
+            Submit Character
+        </button>
+
+        <p id="submitMessage"></p>
+
+        <script src="character.js"></script>
+
+    </body>
+
+</html>
