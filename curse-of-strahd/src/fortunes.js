@@ -1,4 +1,6 @@
 import fsp from 'fs/promises';
+
+import { config } from './config.js';
 import TarrokaDeck from '../classes/TarrokaDeck.js';
 
 export default async function readFortunes() {

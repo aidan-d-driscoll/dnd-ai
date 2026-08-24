@@ -38,12 +38,13 @@ submitButton.addEventListener("click", async () => {
         return;
     }
 
+    // Request made by browser occurs below, only if all previous fields succeeded upon button press.
     const character = {
         name: nameBox.value.trim(),
         class: classBox.value
     };
 
-    const response = await fetch("/api/characters", {
+    const response = await fetch("/api/characters", { // This fetch is where the post request is actually made from browser.
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -51,7 +52,7 @@ submitButton.addEventListener("click", async () => {
         body: JSON.stringify(character)
     });
 
-    const result = await response.json();
+    const result = await response.json(); // Takes the Node JSON response and converts it to a JS object.
     
     submitMessage.textContent = result.message;
 

@@ -1,7 +1,14 @@
-export default async function createCharacter() {
+import fsp from "fs/promises";
 
-    app.listen(3000, () => {
-        console.log("Character creator running at http://localhost:3000");
-    })
+export default async function createCharacter(character) {
 
+    console.log("Creating character:");
+    console.log(character);
+    
+    await fsp.writeFile(
+        `characters/${character.name}.json`,
+        JSON.stringify(character, null, 4)
+    );
+
+    return character;
 }
